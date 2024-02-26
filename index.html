@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .produto {
+            text-align: center;
+            margin: 20px;
+            width: 280px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .produto img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .produto p {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .produto a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .slideshow-container {
+            text-align: center;
+            max-width: 700px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text {
+            color: #fff;
+            font-size: 18px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 8px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 600px) {
+            .text {
+                font-size: 14px
+            }
+        }
+
+        main {
+            text-align: justify;
+            width: 900px;
+            font-size: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./t.jpg" class="logo">
+        <h1>Feliz 2 anos!</h1>
+    </header>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="./1.jpg " style="width: 500px; height: 600px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./2.jpg" style="width: 500px; height: 600px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./3.jpg" style="width: 500px; height: 600px;">
+        </div>
+        <div class="mySlides fade">
+            <img src="./4.jpg" style="width: 500px; height: 600px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./5.jpg" style="width: 500px; height: 600px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./6.jpg" style="width: 500px; height: 600px;">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <main>
+        <article>
+            <p>Hoje celebramos dois anos de um amor que parece ter sido tecido pelas estrelas e abençoado pelos ventos
+                suaves que sopram através dos campos. Nestes dois anos de caminhada juntos, cada momento foi uma pintura
+                em nossa galeria de memórias, e é com imensa gratidão que contemplo cada pincelada de felicidade que
+                compartilhamos.</p>
+            <p>Lembro-me vividamente de uma das nossas celebrações mais especiais: aquele piquenique à beira do lago,
+                onde o tempo pareceu suspender-se para testemunhar nossa felicidade. As pizzas compartilhadas sob o
+                brilho das estrelas, o aroma do chocolate quente nas noites frias e os beijos que trocamos sob o luar,
+                embalados pelas melodias de Lagum, Cazuza, Jão e Vmz, especialmente a canção "Exagerado", são tesouros
+                que guardarei para sempre em meu coração.</p>
+            <p>Nossa última viagem à praia também permanece como um farol de alegria em minha mente. Cada grão de areia
+                que acariciava nossos pés, cada onda que dançava ao som do vento, era um lembrete tangível do vasto e
+                profundo amor que compartilhamos. E em meio a essa imensidão, meu amor por você transcende a própria
+                extensão do universo, alcançando lugares que somente os corações verdadeiramente conectados podem
+                habitar.</p>
+            <p>É verdade que a distância que nos separa é uma prova de fogo em nossa jornada. Como eu desejaria que cada
+                nascer do sol nos encontrasse lado a lado, compartilhando cada instante como se fosse uma eternidade.
+                Mas mesmo quando os quilômetros nos separam, saiba que meu amor por você continua a crescer, desafiando
+                qualquer barreira que ouse interpor-se em nosso caminho.</p>
+            <p>Neste dia especial, renovo meu compromisso de estar ao seu lado, de amá-la com toda a intensidade do meu
+                ser e de construir um futuro repleto de amor, cumplicidade e felicidade ao seu lado.</p>
+            <p>Feliz dois anos de namoro, meu amor.</p>
+            <p>Com todo o meu amor,<br>Víctor Gabriel Cruz Pereira</p>
+        </article>
+    </main>
+    <br>
+    <section>
+        <h2>Nossas musicas</h2>
+        <div class="dashboard">
+            <div class="produto">
+                <a href="https://open.spotify.com/intl-pt/track/6EDj1nbl9wo6ivGI1t59G4?si=64b27fc847824b19">
+                    <img src="idiota.jpg" >
+                </a>
+                <p>Idiota</p>
+            </div>
+            <div class="produto">
+                <a href="https://open.spotify.com/intl-pt/track/30929halSXzxtYut5Jm152?si=f2a7b12076104dc9">
+                    <img src="./saturno.jpg" >
+                </a>
+                <p>Saturno</p>
+
+            </div>
+
+            <div class="produto">
+                <a href="https://open.spotify.com/intl-pt/track/4d0DpU7Odiv0ztvX2GxJlk?si=68f29db3a3f6458e">
+                    <img src="./exagerado.jpg" >
+                </a>
+                <p>Exagerado</p>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
