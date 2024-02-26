@@ -2,47 +2,121 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header h1 {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    font-size: 24px;
-    color: #333;
+}
+
+.logo {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+}
+
+.dot-container {
+    text-align: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
 }
 
 main {
-    margin-top: 20px;
+    text-align: justify;
+    padding: 20px;
 }
 
-article p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-footer {
-    margin-top: 40px;
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
+h2 {
     text-align: center;
 }
 
-footer p {
-    margin-bottom: 10px;
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.social-links a {
-    display: inline-block;
-    margin-right: 10px;
+.produto {
+    text-align: center;
+    margin: 20px;
+    max-width: 280px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.produto p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.produto a {
+    display: block;
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.social-links a:hover {
-    color: #666;
+.produto-image {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        font-size: 16px;
+    }
+
+    .produto {
+        max-width: 100%;
+    }
 }
